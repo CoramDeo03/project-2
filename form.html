@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+    <form action="test_ok.php" method="post">
+    이름 : <input type="text" name="username" required> <br>
+    비번 : <input type="password" name="pwd" placeholder="대문자 포함 4글자 이상" required > <br>
+    성별 : <input type="radio" name="gender" value="2"> 여
+    자<input type="radio" name="gender" value="1"> 남자
+    <br>
+    재학 여부 : <input type="radio" name="istype" value="1"> 신입생
+    <input type="radio" name="istype" vlaue="2"> 복학생<input type="radio" name="istype" vlaue="3"> 재학생<br>
+    생년월일:
+    <input type="date" min="1900-01-01" max="2023-12-31" name="birthday"> <br>
+    거주 지역 :
+    <select name="city">
+        <option vlaue="1">서울</option>
+        <option vlaue="2">경기도,인천</option>
+        <option vlaue="3">충청,대전</option>
+        <option vlaue="4">강원</option>
+        <option vlaue="5">경남,대구</option>
+        <option vlaue="6">경북,울산,부산</option>
+        <option vlaue="7">전라도,광주</option>
+        <option vlaue="8">해외 및 기타</option>
+    </select> <br>
+    자기 소개:<br>
+    <textarea name='content' cols="20" rows="5">
+    </textarea> <br>
+
+    나는 로봇이 아닙니다<input type="checkbox" name="robot" vlaue="1"> <br>
+    <br>
+    <input type='submit' value='로그인'>
+    <input type='reset' value='새로고침'>
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/test_ok.php".</p>
+</body>
+</html>
+ 

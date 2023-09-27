@@ -112,6 +112,9 @@
             margin: 0;
         }    
     }
+    a.no-underline {
+            text-decoration: none;
+        }
     </style>
     </head>
 <body class="vsc-initialized" data-new-gr-c-s-check-loaded="14.1126.0" data-gr-ext-installed="">
@@ -123,23 +126,26 @@
       <div class="wrapper">
        <div id="menubar">
          <ul id="menulist">
-           <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
-           </li><li class="menuitem" onclick="reStyle(1)">Stylesheet 2
+           <li class="menuitem">
+            <a href="style1.html" class="no-underline">Stylesheet1</a>
+           </li><li class="menuitem">
+            <a href="style2.html" class="no-underline">Stylesheet2</a>
            </li><li class="menuitem" onclick="reStyle(2)">Stylesheet 3
            </li><li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-           </li><li class="menuitem" onclick="noStyles()">No Stylesheet
+           </li></li><li class="menuitem">
+            <a href="nostyle.html" class="no-underline">No Stylesheet</a>
          </li></ul>
         </div>
         <div id="main">
           <h1>Same Page Different Stylesheets</h1>
           <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-          <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>,
-          <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>,
+            <a href="style1.html">Stylesheet1</a>,
+            <a href="style2.html">Stylesheet2</a>,
           <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>,
           <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
           </p>
            <h2>No Styles</h2>
-          <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
+          <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="nostyle.html">No Stylesheet</a>.</p>
        </div>
         <div id="sidebar">
           <h3>Side-Bar</h3>
